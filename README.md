@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 I created this boilerplate to solve some issues I faced with getting Electron to work with WSL. After experimenting with different setups, I found using create-react-app and then later adding a few Electron packages, to be the easiest method. I removed some unnecessary files and created one simple component to leave this as a barebones boilerplate to be reused again for future projects. 
 
+Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages. 
 
 ## Available Scripts
 
