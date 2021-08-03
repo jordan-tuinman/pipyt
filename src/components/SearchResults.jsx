@@ -10,7 +10,6 @@ import VideoDetails from './VideoDetails'
 const SearchResults = ({ videos, selected }) => {
   return (
     <>
-      <h1>Results</h1>
       {videos.map((item) => (
         <VideoDetails item={item} />
       ))}

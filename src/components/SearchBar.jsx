@@ -23,13 +23,26 @@ const SearchBar = ({ dispatch }) => {
   return (
     <>
       <form onSubmit={handleSubmit} id="search-form">
-        <input onChange={handleChange} type="text" placeholder="Search" />
-        <button type="submit" form="search-form" value="Submit">
+        <SearchInput onChange={handleChange} type="text" placeholder="Search" />
+        <SearchButton type="submit" form="search-form" value="Submit">
           <IoSearchCircleOutline />
-        </button>
+        </SearchButton>
       </form>
     </>
   )
 }
 
 export default connect()(SearchBar)
+
+const SearchInput = styled.input`
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+`
+
+const SearchButton = styled.button`
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+`
