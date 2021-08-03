@@ -1,12 +1,20 @@
 import React from 'react'
 
-const VideoDetails = ({ item }) => {
+// Redux:
+import { connect } from 'react-redux'
+import { setSelected } from '../actions'
+
+const VideoDetails = ({ dispatch, item }) => {
   let info = item.snippet
   let vidId = item.id.videoId
 
+  function handleClick() {
+    dispatch(setSelected(vidId))
+  }
+
   return (
     <>
-      <div>
+      <div onClick={handleClick}>
         <img src={info.thumbnails.high.url} alt={info.title} />
         <p>Title: {info.title}</p>
         <p>
@@ -18,4 +26,4 @@ const VideoDetails = ({ item }) => {
   )
 }
 
-export default VideoDetails
+export default connect()(VideoDetails)

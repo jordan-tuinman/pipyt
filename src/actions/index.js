@@ -1,5 +1,12 @@
 import { getVideos } from '../apis'
 
+export const setSelected = (selected) => {
+  return {
+    type: 'SET_SELECTED',
+    selected,
+  }
+}
+
 export const setResults = (videos) => {
   return {
     type: 'SET_VIDEOS',

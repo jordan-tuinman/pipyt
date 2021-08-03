@@ -7,8 +7,7 @@ import { connect } from 'react-redux'
 // Components:
 import VideoDetails from './VideoDetails'
 
-const SearchResults = ({ videos }) => {
-  console.log(videos)
+const SearchResults = ({ videos, selected }) => {
   return (
     <>
       <h1>Results</h1>
@@ -22,6 +21,7 @@ const SearchResults = ({ videos }) => {
 function mapStateToProps(state) {
   return {
     videos: state.videos,
+    selected: state.selected,
   }
 }
 
