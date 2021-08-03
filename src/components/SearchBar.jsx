@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
 import styled from 'styled-components'
 
 // Redux:
+import { connect } from 'react-redux'
 import { setVideos } from '../actions'
 
 // React Icons:
