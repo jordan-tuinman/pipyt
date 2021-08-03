@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
+import { connect } from 'react-redux'
 import styled from 'styled-components'
 
-import { getVideos } from '../apis'
+// Redux:
+import { setVideos } from '../actions'
 
 // React Icons:
 import { IoSearchCircleOutline } from 'react-icons/io5'
 
-const SearchBar = () => {
+const SearchBar = ({ dispatch }) => {
   const [query, setQuery] = useState('')
 
   function handleChange(evt) {
@@ -15,8 +17,7 @@ const SearchBar = () => {
 
   function handleSubmit(evt) {
     evt.preventDefault()
-    console.log(query)
-    getVideos(query)
+    dispatch(setVideos(query))
   }
 
   return (
@@ -31,4 +32,4 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default connect()(SearchBar)
