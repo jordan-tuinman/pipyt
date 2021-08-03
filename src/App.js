@@ -1,11 +1,11 @@
-import TestComponent from './components/TestComponent';
+import SearchBar from './components/SearchBar'
 
 const App = () => {
   return (
     <>
-      <TestComponent />
+      <SearchBar />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
