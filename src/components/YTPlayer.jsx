@@ -28,7 +28,7 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps)(YTPlayer)
 
 const Player = styled.iframe`
-  margin-top: -35.2px;
+  margin-top: -28.79px;
   border: none;
   height: 100vh;
 `

@@ -53,6 +53,8 @@ const SearchInput = styled.input`
   padding: 0.1rem 0.2rem;
   outline-color: #3ea6ff;
   width: 150px;
+  background-color: transparent;
+  color: #fcfcfc;
 `
 
 const SearchButton = styled.button`

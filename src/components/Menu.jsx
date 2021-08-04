@@ -37,7 +37,7 @@ const MenuWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.6) 0%,
@@ -53,11 +53,11 @@ const Wrapper = styled.div`
   align-items: center;
   grid-gap: 1rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.9rem;
 `
 
 const AppName = styled.p`
-  font-weight: 500;
+  font-weight: 400;
 `
 
 const BackIcon = styled.div`

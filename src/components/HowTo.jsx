@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   padding: 2rem 2rem;
   grid-gap: 1rem;
   height: 100vh;
-  margin-top: -35.2px;
+  margin-top: -28.79px;
 `
 
 const Title = styled.p`
