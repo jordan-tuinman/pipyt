@@ -26,7 +26,7 @@ const SearchBar = ({ dispatch }) => {
         onChange={handleChange}
         type="text"
         placeholder="Search"
-        autoFocus="true"
+        autoFocus={true}
       />
       <SearchButton type="submit" form="search-form" value="Submit">
         <IoSearchCircleOutline
