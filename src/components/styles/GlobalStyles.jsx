@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
 }
 
 
+
 `
 
 export default GlobalStyles
