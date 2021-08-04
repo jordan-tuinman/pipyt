@@ -1,18 +1,24 @@
+import { connect } from 'react-redux'
+
 // Components:
 import GlobalStyles from './components/styles/GlobalStyles'
 import Menu from './components/Menu'
-import SearchResults from './components/SearchResults'
-import YTPlayer from './components/YTPlayer'
+import Main from './components/Main'
 
-const App = () => {
+const App = ({ nav }) => {
   return (
     <>
       <GlobalStyles />
       <Menu />
-      <SearchResults />
-      <YTPlayer />
+      {nav === 'home' ? <p>text will go here</p> : <Main />}
     </>
   )
 }
 
-export default App
+function mapStateToProps(state) {
+  return {
+    nav: state.nav,
+  }
+}
+
+export default connect(mapStateToProps)(App)

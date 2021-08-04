@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 // Redux:
 import { connect } from 'react-redux'
-import { setSelected } from '../actions'
+import { setPlayerVideo } from '../actions'
 
 const VideoDetails = ({ dispatch, item }) => {
   let info = item.snippet
@@ -11,7 +11,7 @@ const VideoDetails = ({ dispatch, item }) => {
   let vidId = item.id.videoId
 
   function handleClick() {
-    dispatch(setSelected(vidId))
+    dispatch(setPlayerVideo(vidId))
   }
 
   return (

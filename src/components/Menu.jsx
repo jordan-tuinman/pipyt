@@ -1,15 +1,25 @@
 import React from 'react'
 
+// Redux:
+import { connect } from 'react-redux'
+import { setNav } from '../actions'
+
 // React Icons:
 import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import styled from 'styled-components'
 import SearchBar from './SearchBar'
 
-const Menu = () => {
+const Menu = ({ dispatch }) => {
+  function handleClick() {
+    dispatch(setNav('results'))
+  }
+
   return (
     <MenuWrapper>
+      <BackIcon onClick={handleClick}>
+        <IoArrowBackCircleOutline />
+      </BackIcon>
       <Wrapper>
-        <BackIcon />
         <AppName>PiPYT</AppName>
       </Wrapper>
       <SearchBar />
@@ -17,7 +27,7 @@ const Menu = () => {
   )
 }
 
-export default Menu
+export default connect()(Menu)
 
 const MenuWrapper = styled.div`
   position: sticky;
@@ -28,7 +38,6 @@ const MenuWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  z-index: 90;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.6) 0%,
@@ -51,6 +60,14 @@ const AppName = styled.p`
   font-weight: 500;
 `
 
-const BackIcon = styled(IoArrowBackCircleOutline)`
+const BackIcon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 1.2rem;
+  padding-right: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
