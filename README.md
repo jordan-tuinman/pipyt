@@ -2,8 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-I created this boilerplate to solve some issues I faced with getting Electron to work with WSL. After experimenting with different setups, I found using create-react-app and then later adding a few Electron packages, to be the easiest method. I removed some unnecessary files and created one simple component to leave this as a barebones boilerplate to be reused again for future projects. 
+I created this boilerplate to solve some issues I faced with getting Electron to work with WSL. After experimenting with different setups, I found using create-react-app and then later adding a few Electron packages, to be the easiest method. I removed some unnecessary files and created one simple component to leave this as a barebones boilerplate to be reused again for future projects.
 
+Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages.
 
 ## Available Scripts
 
@@ -11,12 +12,12 @@ Basic React scripts remain the same, but with two added Electron scripts:
 
 #### `npm dev`
 
-Runs the app in Electron, and opens dev tools in a separate window (personal preference). 
-Concurrently runs the React script 'npm start', prevents browser from opening, and runs electron by running the below 'npm electron' script. 
+Runs the app in Electron, and opens dev tools in a separate window (personal preference).
+Concurrently runs the React script 'npm start', prevents browser from opening, and runs electron by running the below 'npm electron' script.
 
 #### `npm electron`
 
-This script is run concurrently with the above, not intended to be run by itself. 
+This script is run concurrently with the above, not intended to be run by itself.
 
 #### `npm start`
 
@@ -50,4 +51,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
