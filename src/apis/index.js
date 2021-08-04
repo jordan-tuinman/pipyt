@@ -3,7 +3,7 @@ import request from 'superagent'
 export function getVideos(query) {
   return request
     .get(
-      `https://youtube.googleapis.com/youtube/v3/search?autoplay=1&type=video&part=snippet&maxResults=25&q=${query}&key=AIzaSyDYTSVKkDDjUXuSm2RpRsijmO1j2dCe91U`
+      `https://youtube.googleapis.com/youtube/v3/search?autoplay=1&type=video&part=snippet&maxResults=25&q=${query}&key=AIzaSyBcQsiBREyvIzmFpH9rCqndy2KYLkFS9Rw`
     )
     .then((res) => {
       return res.body.items

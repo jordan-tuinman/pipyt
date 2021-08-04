@@ -21,6 +21,7 @@ const HowTo = () => {
 export default HowTo
 
 const Wrapper = styled.div`
+  -webkit-user-select: none;
   display: flex;
   flex-direction: column;
   align-items: center;
