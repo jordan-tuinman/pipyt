@@ -14,8 +14,12 @@ body {
   color: #fcfcfc;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 200px;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 `
 

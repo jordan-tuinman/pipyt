@@ -9,11 +9,11 @@ import VideoDetails from './VideoDetails'
 
 const SearchResults = ({ videos, selected }) => {
   return (
-    <>
+    <ResultsWrapper>
       {videos.map((item) => (
         <VideoDetails item={item} />
       ))}
-    </>
+    </ResultsWrapper>
   )
 }
 
@@ -25,3 +25,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(SearchResults)
+
+const ResultsWrapper = styled.div`
+  padding: 0 1rem;
+`

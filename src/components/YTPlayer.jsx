@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 // Redux:
 import { connect } from 'react-redux'
@@ -8,12 +9,12 @@ const YTPlayer = ({ selected }) => {
 
   return (
     <>
-      <iframe
+      <Player
         title="YTPlayer"
         src={`https://www.youtube.com/embed/${vidId}`}
         width="100%"
         height="100%"
-      ></iframe>
+      ></Player>
     </>
   )
 }
@@ -25,3 +26,8 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(YTPlayer)
+
+const Player = styled.iframe`
+  border: none;
+  height: 100vh;
+`

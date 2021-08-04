@@ -9,19 +9,23 @@ const VideoDetails = ({ dispatch, item }) => {
   let info = item.snippet
   let date = info.publishedAt
   let vidId = item.id.videoId
-  console.log(date)
+
   function handleClick() {
     dispatch(setSelected(vidId))
   }
 
   return (
     <>
-      <Wrapper onClick={handleClick}>
+      <Wrapper>
         <ColumnOne>
-          <img src={info.thumbnails.high.url} alt={info.title} />
+          <img
+            onClick={handleClick}
+            src={info.thumbnails.high.url}
+            alt={info.title}
+          />
         </ColumnOne>
         <ColumnTwo>
-          <Title>{info.title}</Title>
+          <Title onClick={handleClick}>{info.title}</Title>
           <Info>
             {info.channelTitle}
             <Dot> · </Dot>
@@ -79,11 +83,13 @@ const Title = styled.h1`
 
 const Info = styled.p`
   font-size: 0.7rem;
+  color: #aaaaaa;
 `
 
 const Description = styled.p`
   padding-top: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  color: #aaaaaa;
 `
 
 const Dot = styled.span`
