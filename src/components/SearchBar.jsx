@@ -54,7 +54,7 @@ const SearchInput = styled.input`
   outline-color: #3ea6ff;
   width: 150px;
   background-color: transparent;
-  color: #fcfcfc;
+  color: #aaaaaa;
 `
 
 const SearchButton = styled.button`
