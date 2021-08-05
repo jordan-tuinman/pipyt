@@ -10,9 +10,8 @@ const HowTo = () => {
         other windows - ad free!
       </Info>
       <Info>
-        {' '}
         Search for any video, and choose from the top 25 results. PiPYT plays
-        videos only; no playlists, no unncessary information.
+        videos only; no playlists, no ads.
       </Info>
     </Wrapper>
   )
