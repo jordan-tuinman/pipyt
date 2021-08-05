@@ -67,9 +67,11 @@ const SearchButton = styled.button`
   border: none;
   font-size: 1.2rem;
   padding: 0;
-  padding-left: 0.2rem;
+  margin-left: 0.2rem;
+  border-radius: 10px;
 
   &:hover {
     cursor: pointer;
+    background-color: #3b3b3b;
   }
 `

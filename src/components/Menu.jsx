@@ -65,9 +65,11 @@ const BackIcon = styled.div`
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
-  padding-right: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
 
   &:hover {
     cursor: pointer;
+    background-color: #3b3b3b;
   }
 `
