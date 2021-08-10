@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const apiKey = 'AIzaSyBRhFq4yyRuakWGiNNyQyoU5sk7aZ61o7Q'
+const apiKey = 'xxxx'
 
 export function getVideos(query) {
   return request

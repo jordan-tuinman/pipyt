@@ -1,10 +1,20 @@
-# Electron React Boilerplate
+# PiPYT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PiPYT is a picture-in-picture YouTube player for PC. You can search in app, and play any YouTube video without ads, all in a small screen that always sits on top of your other windows.
 
-I created this boilerplate to solve some issues I faced with getting Electron to work with WSL. After experimenting with different setups, I found using create-react-app and then later adding a few Electron packages, to be the easiest method. I removed some unnecessary files and created one simple component to leave this as a barebones boilerplate to be reused again for future projects.
+I created this wee app to solve a problem for myself. What I wanted was to be able to watch YouTube tutorials and videos in a pop-out style window on my PC, similar to on a phone. I thought this would be really handy, especially for those times where I might be working in a cafe or somewhere without a second screen and I need my main work window maximised.
 
-Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages.
+If you would like to try it out on your own machine, feel free to clone this repo and follow the steps below:
+
+- Run npm install
+  Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages.
+
+- Get your own YouTube API key, then copy and paste it into the 'apiKey' variable located in 'src/apis/index.js'
+  Follow the instructions here to get your own YouTube API key if you don't already know how. For each API key, you can make up to YouTube 100 searches per day.
+
+- Save, and then run the script 'npm run dev' to start PiPYT
+
+If you would like to package the app to use more easily on your own PCs, you will need to look into this yourself, as I haven't yet done this for myself either.
 
 ## Available Scripts
 
