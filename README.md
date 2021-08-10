@@ -6,11 +6,15 @@ I created this wee app to solve a problem for myself. What I wanted was to be ab
 
 If you would like to try it out on your own machine, feel free to clone this repo and follow the steps below:
 
+## Running PiPYT
+
 - Run npm install
-  Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages.
+  
+Note: if using windows 10 - run 'npm install' via powershell, then switch over to WSL if desired. If 'npm install' is done via WSL, it seems to create issues with the Electron packages.
 
 - Get your own YouTube API key, then copy and paste it into the 'apiKey' variable located in 'src/apis/index.js'
-  Follow the instructions here to get your own YouTube API key if you don't already know how. For each API key, you can make up to YouTube 100 searches per day.
+  
+Follow the instructions [here](https://developers.google.com/youtube/v3/getting-started) to get your own YouTube API key if you don't already know how. For each API key, you can make up to YouTube 100 searches per day.
 
 - Save, and then run the script 'npm run dev' to start PiPYT
 
