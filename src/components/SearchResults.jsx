@@ -10,8 +10,8 @@ import VideoDetails from './VideoDetails'
 const SearchResults = ({ videos, selected }) => {
   return (
     <ResultsWrapper>
-      {videos.map((item) => (
-        <VideoDetails item={item} />
+      {videos.map((item, i) => (
+        <VideoDetails item={item} key={i}/>
       ))}
     </ResultsWrapper>
   )

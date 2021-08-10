@@ -9,9 +9,9 @@ import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import styled from 'styled-components'
 import SearchBar from './SearchBar'
 
-const Menu = ({ dispatch }) => {
+const Menu = ({ dispatch, nav }) => {
   function handleClick() {
-    dispatch(setNav('results'))
+    dispatch(setNav(nav === 'home' ? 'home' : 'results'))
   }
 
   return (
@@ -27,7 +27,13 @@ const Menu = ({ dispatch }) => {
   )
 }
 
-export default connect()(Menu)
+function mapStateToProps(state) {
+  return {
+    nav: state.nav
+  }
+}
+
+export default connect(mapStateToProps)(Menu)
 
 const MenuWrapper = styled.div`
   position: sticky;
